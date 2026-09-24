@@ -1,14 +1,257 @@
 <!DOCTYPE html>
-<html>
-<head><meta charset="utf-8"><title>隐私政策 - 文骥 RydMind</title></head>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="文骥 RydMind 隐私政策：说明浏览器扩展、网站、账户、云同步、AI 与反馈服务如何处理用户数据。">
+  <link rel="canonical" href="https://m1kowo.github.io/rydmind-pages/privacy.html">
+  <title>隐私政策 - 文骥 RydMind</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: #1f2937;
+      background: #f7f8fa;
+      line-height: 1.75;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px clamp(24px, 6vw, 72px);
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    }
+
+    h1, h2, h3 { color: #111827; line-height: 1.35; }
+    h1 { margin: 0 0 12px; font-size: 2.1rem; }
+    h2 { margin-top: 42px; padding-top: 8px; font-size: 1.45rem; border-top: 1px solid #e5e7eb; }
+    h3 { margin-top: 26px; font-size: 1.1rem; }
+    p, li { font-size: 1rem; }
+    ul { padding-left: 1.5rem; }
+    a { color: #2563eb; }
+
+    .meta {
+      margin: 0 0 28px;
+      padding: 16px 20px;
+      background: #f3f4f6;
+      border-radius: 10px;
+    }
+
+    .meta p { margin: 4px 0; }
+
+    .notice {
+      margin: 28px 0 34px;
+      padding: 20px 22px;
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
+      border-left: 5px solid #f97316;
+      border-radius: 10px;
+    }
+
+    .notice h2 {
+      margin: 0 0 10px;
+      padding: 0;
+      border: 0;
+      font-size: 1.2rem;
+    }
+
+    .notice ul { margin-bottom: 0; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      font-size: 0.96rem;
+    }
+
+    th, td {
+      padding: 12px 14px;
+      border: 1px solid #d1d5db;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th { background: #f3f4f6; }
+
+    footer {
+      margin-top: 44px;
+      padding-top: 20px;
+      border-top: 1px solid #e5e7eb;
+      color: #6b7280;
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 640px) {
+      body { padding: 0; }
+      main { padding: 30px 20px; border: 0; border-radius: 0; box-shadow: none; }
+      table, thead, tbody, tr, th, td { display: block; }
+      thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+      tr { margin-bottom: 14px; border: 1px solid #d1d5db; }
+      td { border: 0; border-bottom: 1px solid #e5e7eb; }
+      td:last-child { border-bottom: 0; }
+      td::before { content: attr(data-label); display: block; margin-bottom: 4px; font-weight: 700; color: #111827; }
+    }
+  </style>
+</head>
 <body>
-    <h1>隐私政策</h1>
-    <p>文骥 RydMind 尊重并保护所有用户的隐私。</p>
-    <h2>1. 我们收集的数据</h2>
-    <p>本扩展程序仅在本地处理您划词翻译的内容和文献信息，不会将您的个人浏览记录上传至我们的服务器。</p>
-    <h2>2. 数据的使用与分享</h2>
-    <p>我们不会向任何第三方出售或分享您的个人数据。</p>
-    <h2>3. 联系我们</h2>
-    <p>如有疑问，请联系：m1chaelink@163.com</p>
+  <main>
+    <h1>文骥 RydMind 隐私政策</h1>
+    <p>我们重视你的隐私，并如实说明文骥 RydMind 如何收集、使用、存储和共享数据。</p>
+
+    <div class="meta">
+      <p><strong>更新及生效日期：</strong>2026 年 9 月 24 日</p>
+      <p><strong>适用产品：</strong>文骥 RydMind 浏览器扩展及其配套网站与服务</p>
+      <p><strong>开发者及运营者：</strong>文骥 RydMind 运营者（以下简称“我们”）</p>
+      <p><strong>联系邮箱：</strong><a href="mailto:m1chaelink@163.com">m1chaelink@163.com</a></p>
+    </div>
+
+    <section class="notice" aria-labelledby="important-summary">
+      <h2 id="important-summary">重要数据处理说明</h2>
+      <ul>
+        <li><strong>登录后会自动同步：</strong>你保存的文献、分组、标签、笔记、设置及自定义数据集会通过加密连接同步至 RydMind 服务端。</li>
+        <li><strong>AI 功能会传输文本：</strong>当你主动使用 AI 总结或翻译时，论文标题、摘要或选中文本会发送至 RydMind 服务端，并转交 DeepSeek 等 AI 服务提供商生成结果。</li>
+        <li><strong>反馈会上传诊断信息：</strong>当你主动提交问题反馈时，反馈内容以及插件版本、浏览器、操作系统和当前网站的域名会发送至 RydMind 服务端。</li>
+        <li><strong>我们不出售数据：</strong>我们不出售用户数据，不将用户数据用于广告投放、信用评估或跨网站行为画像，也不上传 Cookie、页面表单内容或完整浏览历史。</li>
+      </ul>
+      <p>注册、登录、使用 AI 功能或提交反馈前，请阅读相应说明。你可以选择不进行这些操作；如果你不同意为提供相关功能所必需的数据处理，请不要使用相应功能。</p>
+    </section>
+
+    <section>
+      <h2>1. 政策适用范围</h2>
+      <p>本政策适用于文骥 RydMind 浏览器扩展、官方网站，以及由我们提供的账户、数据同步、期刊信息查询、AI 总结、翻译、公告和问题反馈服务。本政策不适用于你访问的第三方学术网站、浏览器商店或其他第三方产品；这些服务如何处理数据由其各自的隐私政策决定。</p>
+    </section>
+
+    <section>
+      <h2>2. 我们处理的数据、方式及用途</h2>
+
+      <h3>2.1 账户与身份验证信息</h3>
+      <p>当你注册、登录或重置密码时，我们会处理邮箱地址、用户名、密码、邮箱验证码、登录会话、扩展实例标识以及访问令牌和刷新令牌。密码经安全哈希处理后保存，我们不会保存明文密码；验证码用于注册或重置密码；会话信息和令牌用于维持登录状态、限制异常登录并授权扩展访问相应服务。</p>
+
+      <h3>2.2 扩展本地数据</h3>
+      <p>扩展会在浏览器本地存储功能设置、站点启用状态、标签颜色、期刊查询缓存、AI 结果缓存、收藏文献、分组、笔记、标签、自定义数据集、同步队列和登录会话信息，用于恢复配置、提高加载速度、支持离线查看和提供文献管理功能。Chrome Web Store 将仅在设备上处理的数据也视为需要披露的用户数据，因此这些本地数据同样列入本政策。</p>
+
+      <h3>2.3 账户同步数据</h3>
+      <p>登录扩展后，云同步会自动运行。我们会将你在扩展中保存或修改的下列数据通过 HTTPS 传输至 RydMind 服务端，以便在登录同一账户的浏览器之间同步：</p>
+      <ul>
+        <li>文献题录，包括标题、作者、期刊、年份、网页地址、DOI、摘要、标签、笔记、阅读状态、来源信息和相关期刊等级数据；</li>
+        <li>文献分组或项目的名称及其中包含的文献标识；</li>
+        <li>扩展设置，包括功能开关、站点控制规则、标签显示和颜色设置；</li>
+        <li>你导入或创建的自定义期刊数据集，包括数据集名称、标签名称、颜色、启用状态、期刊名称和等级。</li>
+      </ul>
+      <p>AI 总结结果和关键点保存在浏览器本地，不作为个人数据同步内容上传。为防止已删除内容被离线设备重新上传，服务端可能保留仅含记录标识和删除版本的最小删除标记，该标记不包含已删除内容正文。</p>
+
+      <h3>2.4 学术页面内容与期刊查询</h3>
+      <p>在你已登录且当前站点未被关闭时，扩展内容脚本会在浏览器内运行。它会在受支持的学术页面中识别公开显示的论文标题、期刊名称、作者、年份、DOI、摘要和页面地址，以展示期刊等级，并提供收藏、翻译和 AI 总结入口。在其他网页上，扩展仅提供已启用的划词翻译能力。</p>
+      <p>期刊等级查询会向 RydMind 服务端发送待查询的期刊名称；批量查询时会发送一组期刊名称。我们不会为了期刊查询上传完整网页、Cookie、页面表单内容或完整浏览历史，也不会根据这些查询建立或出售浏览画像。只有当你收藏文献、使用 AI 功能或提交问题反馈时，相关数据才会按照本政策对应章节传输。</p>
+
+      <h3>2.5 AI 总结与翻译内容</h3>
+      <p>只有在你主动点击 AI 总结或主动触发划词翻译时，相关论文标题、摘要、你选中的文本、目标语言和必要的生成参数才会通过加密连接发送至 RydMind 服务端。RydMind 服务端随后将生成请求转交给 <strong>DeepSeek 等 AI 服务提供商</strong>，并将生成结果返回给扩展。</p>
+      <p>RydMind 的个人数据同步数据库不保存 AI 请求正文和 AI 输出；AI 总结结果可能缓存在你的浏览器本地。相关 AI 服务提供商可能依照其服务条款和隐私规则处理收到的请求内容。请勿提交密码、身份号码、未公开研究数据、商业秘密或其他不希望由第三方处理的敏感内容。</p>
+
+      <h3>2.6 公告、问题反馈与客服沟通</h3>
+      <p>当你查看公告时，我们会处理账户对应的公告阅读时间，用于显示最新内容。当你主动提交问题反馈或继续回复时，我们会处理反馈主题、问题类型、描述和后续消息，并自动附加插件版本、浏览器名称及版本、操作系统和当前网站的域名。当前网站仅上传域名，不上传协议、路径、查询参数或页面正文。上述信息用于定位问题、回复用户和改进兼容性。</p>
+
+      <h3>2.7 服务运行与安全信息</h3>
+      <p>当你访问网站或服务端接口时，网络和服务器基础设施可能自动处理 IP 地址、请求时间、接口路径、响应状态、设备或浏览器的基本信息，以及用于防止滥用和保障账户安全的技术标识。这些信息用于提供服务、限制异常请求、安全审计和排查故障，不用于广告画像或跨网站行为追踪。应用日志不会主动记录访问令牌、验证码、邮箱、完整网页地址、论文标题、摘要、笔记或翻译正文。</p>
+    </section>
+
+    <section>
+      <h2>3. 浏览器权限的使用</h2>
+      <ul>
+        <li><strong>storage：</strong>保存扩展设置、缓存、文献数据、自定义数据集、同步状态和登录会话。</li>
+        <li><strong>activeTab：</strong>在你打开扩展弹窗时读取当前标签页地址，用于识别当前网站并提供站点启用开关。</li>
+        <li><strong>identity：</strong>通过浏览器提供的安全授权流程完成 RydMind 账户登录。</li>
+        <li><strong>所有 HTTP/HTTPS 网页的内容脚本访问：</strong>在受支持的学术页面展示期刊等级和文献工具，并在已启用的网站提供划词翻译。该权限覆盖面较广，但普通网页内容不会因此自动上传至 RydMind。</li>
+        <li><strong>rydmind.com 主机访问权限：</strong>连接账户认证、期刊查询、云同步、AI、公告和问题反馈服务。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. 数据共享、委托处理与接收方</h2>
+      <p>我们不会出售、出租或以数据经纪方式提供你的个人信息。仅会在提供功能所必需的范围内向以下接收方传输或委托处理数据：</p>
+      <table>
+        <thead>
+          <tr><th>接收方</th><th>可能处理的数据</th><th>用途</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="接收方"><strong>DeepSeek 等 AI 服务提供商</strong></td>
+            <td data-label="可能处理的数据">你主动提交用于 AI 总结或翻译的论文标题、摘要、选中文本及生成参数</td>
+            <td data-label="用途">生成 AI 总结或翻译结果</td>
+          </tr>
+          <tr>
+            <td data-label="接收方"><strong>云计算、数据库、缓存、网络安全和邮件服务商</strong></td>
+            <td data-label="可能处理的数据">提供服务器、网络安全和数据存储等基础设施所必需的账户、同步、反馈及服务运行数据；发送验证码邮件所需的收件邮箱、验证码邮件内容和投递信息</td>
+            <td data-label="用途">提供云基础设施、安全防护、数据存储和验证码邮件发送服务</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>除上述情况外，我们仅会在适用法律、司法程序或监管机关提出合法要求时，或者为保护用户、公众、我们的合法权益和服务安全所必需时提供最少范围的信息。负责运营和客服的授权人员可能在履行职责所需范围内访问账户、同步状态和问题反馈，并受到访问控制和保密要求约束。</p>
+    </section>
+
+    <section>
+      <h2>5. 数据保存期限与删除</h2>
+      <ul>
+        <li><strong>验证码：</strong>通常在签发后 10 分钟失效，验证成功后即被消费；必要的频率限制记录仅在防止滥用所需期间保留。</li>
+        <li><strong>登录会话：</strong>访问令牌有效期通常为 15 分钟，刷新会话有效期通常为 30 天；退出登录、会话被撤销或到期后不再用于授权。</li>
+        <li><strong>账户资料和云同步数据：</strong>通常保存至你删除相关内容、注销账户或提出有效删除请求时。删除同步记录后可能保留不含内容正文的最小删除标记。</li>
+        <li><strong>问题反馈：</strong>保存至你主动删除反馈会话、账户注销或提出有效删除请求时；为解决争议或履行法定义务确需保留的除外。</li>
+        <li><strong>本地数据：</strong>保存至你在扩展中删除、清除浏览器扩展数据或卸载扩展时。卸载扩展不会自动删除已同步至云端的账户数据。</li>
+        <li><strong>安全和故障日志：</strong>仅在安全审计、故障排查和履行法定义务所需的合理期限内保留，超过必要期限后删除、匿名化或依法隔离。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. 你的选择、授权与控制</h2>
+      <ul>
+        <li>你可以不注册或不登录；未登录时，扩展不读取论文页面、不查询期刊等级、不调用 AI，也不访问个人云数据。</li>
+        <li>登录后云同步会自动运行。你可以退出登录停止后续同步，但退出登录不会自动删除已经保存的云端数据。</li>
+        <li>你可以不点击 AI 总结、不触发划词翻译，从而不向 RydMind 和相关 AI 服务提供商提交相关文本。</li>
+        <li>你可以不提交问题反馈，从而不上传反馈内容和相应诊断信息。</li>
+        <li>你可以通过扩展的站点控制功能关闭特定网站上的扩展功能。</li>
+        <li>你可以删除收藏、分组、自定义数据集和问题反馈，清除本地缓存，导出扩展支持导出的文献数据，或者申请更正和删除账户信息。</li>
+      </ul>
+      <p>如需注销账户、删除云端个人信息或行使其他适用的数据权利，请发送邮件至 <a href="mailto:m1chaelink@163.com">m1chaelink@163.com</a>。为保护账户安全，我们可能需要核验你的身份。法律要求继续保存、删除会影响他人合法权益或我们需要保留最少信息以处理争议时，我们会说明不能立即完成删除的原因。</p>
+    </section>
+
+    <section>
+      <h2>7. 数据安全</h2>
+      <p>我们采用 HTTPS 加密传输、密码安全哈希、短期访问令牌、刷新令牌轮换、访问控制、账户隔离和日志敏感字段遮蔽等措施保护数据。服务端不代理抓取或保存第三方学术网页的完整 HTML。互联网服务无法保证绝对安全；如发生可能影响你权益的安全事件，我们将依据适用法律采取补救措施并进行通知。</p>
+    </section>
+
+    <section>
+      <h2>8. Chrome Web Store 用户数据有限使用承诺</h2>
+      <p>文骥 RydMind 对从浏览器和用户处获得的信息的使用，将遵守 <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use" target="_blank" rel="noopener noreferrer">Chrome Web Store 用户数据政策</a>，包括其中的有限使用要求。我们只为提供本政策和产品界面中明确说明的用户功能，以及维护、安全和改进这些功能所必需的目的，收集、使用或传输用户数据。</p>
+    </section>
+
+    <section>
+      <h2>9. 未成年人保护</h2>
+      <p>本服务主要面向科研人员、教师和学生，并非专门面向不满 14 周岁的儿童。未满 14 周岁的用户应在监护人同意和指导下使用服务并提供个人信息。如监护人认为儿童未经同意向我们提供了个人信息，请通过本政策所列邮箱联系我们。</p>
+    </section>
+
+    <section>
+      <h2>10. 政策更新</h2>
+      <p>我们可能因功能、数据处理方式或法律要求变化而更新本政策。发生重大变更时，我们会通过网站、扩展界面、商店页面或其他合理方式作出显著提示，并在页面顶部更新生效日期。若更新涉及新的数据收集或用途，我们会在开始相关处理前按照适用要求向你说明并取得必要同意。</p>
+    </section>
+
+    <section>
+      <h2>11. 联系我们</h2>
+      <p>如对本政策、数据处理方式或个人信息权利有任何问题，请联系：<a href="mailto:m1chaelink@163.com">m1chaelink@163.com</a>。</p>
+    </section>
+
+    <footer>
+      <p>文骥 RydMind · 隐私政策 · 最后更新于 2026 年 9 月 24 日</p>
+    </footer>
+  </main>
 </body>
 </html>
